@@ -14,7 +14,7 @@ def is_calc():
             print('Correct!')
             count += 1
         if answer != num:
-            print(f"'{answer}' is wrong answer ;). Correct answer was {num}")
+            print(f"'{answer}' is wrong answer ;). Correct answer was '{num}'")
             print(f"Let's try again, {name}!")
             break
         if count == 3:
