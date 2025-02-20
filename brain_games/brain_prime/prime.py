@@ -11,20 +11,20 @@ def is_prime():
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
         if (num == 2 and answer == 'yes') or (num % 2 != 0 and answer == 'yes') or (num % 2 == 0 and answer == 'no'):
-            print('Correct')
+            print('Correct!')
             count += 1
             if count == 3:
                 print(f"Congratulations, {name}!")
         else:
             if num % 2 == 0 and answer == 'yes':
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name}")
+                print(f"Let's try again, {name}!")
                 break
             if (num == 2 and answer != 'yes') or (num % 2 != 0 and answer != 'yes'):
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again, {name}")
+                print(f"Let's try again, {name}!")
                 break
             if num % 2 == 0 and answer != 'no':
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name}")
+                print(f"Let's try again, {name}!")
                 break
