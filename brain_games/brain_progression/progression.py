@@ -15,7 +15,7 @@ def is_progression():
             count += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{missing_number}'.")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
     if count == 3:
         print(f'Congratulations, {name}!')
