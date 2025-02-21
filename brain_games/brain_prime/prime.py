@@ -13,22 +13,22 @@ def is_prime():
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
         Flag = is_check(num)
-        if (answer == 'yes' and Flag == True) or (answer == 'no' and Flag == False):
+        if (answer == 'yes' and Flag is True) or (answer == 'no' and Flag is False):
             print('Correct!')
             count += 1
-        if answer == 'yes' and Flag == False:
+        if answer == 'yes' and Flag is False:
             print(f"'{answer}' is wrong answer ;). Correct answer was 'no'.'")
             print(f"Let's try again, {name}!")
             break
-        if answer == 'no' and Flag == True:
+        if answer == 'no' and Flag is True:
             print(f"'{answer}' is wrong answer ;). Correct answer was 'yes'.'")
             print(f"Let's try again, {name}!")
             break
-        if answer != 'yes' and Flag == True:
+        if answer != 'yes' and Flag is True:
             print(f"'{answer}' is wrong answer ;). Correct answer was 'yes'.'")
             print(f"Let's try again, {name}!")
             break
-        if answer != 'no' and Flag == False:
+        if answer != 'no' and Flag is False:
             print(f"'{answer}' is wrong answer ;). Correct answer was 'no'.'")
             print(f"Let's try again, {name}!")
             break
