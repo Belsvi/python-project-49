@@ -1,6 +1,8 @@
+import prompt
 from brain_games.brain_calc.hello import hello_prime
 from brain_games.brain_prime.data import input_data
-import prompt
+from brain_games.brain_prime.check import is_check
+
 
 
 def is_prime():
@@ -10,21 +12,25 @@ def is_prime():
         num = input_data()
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
-        if (num == 2 and answer == 'yes') or (num % 2 != 0 and answer == 'yes') or (num % 2 == 0 and answer == 'no'):
+        Flag = is_check(num)
+        if (answer == 'yes' and Flag == True) or (answer == 'no' and Flag == False):
             print('Correct!')
             count += 1
-            if count == 3:
-                print(f"Congratulations, {name}!")
-        else:
-            if num % 2 == 0 and answer == 'yes':
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name}!")
-                break
-            if (num == 2 and answer != 'yes') or (num % 2 != 0 and answer != 'yes'):
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again, {name}!")
-                break
-            if num % 2 == 0 and answer != 'no':
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name}!")
-                break
+        if answer == 'yes' and Flag == False:
+            print(f"'{answer}' is wrong answer ;). Correct answer was 'no'.'")
+            print(f"Let's try again, {name}!")
+            break
+        if answer == 'no' and Flag == True:
+            print(f"'{answer}' is wrong answer ;). Correct answer was 'yes'.'")
+            print(f"Let's try again, {name}!")
+            break
+        if answer != 'yes' and Flag == True:
+            print(f"'{answer}' is wrong answer ;). Correct answer was 'yes'.'")
+            print(f"Let's try again, {name}!")
+            break
+        if answer != 'no' and Flag == False:
+            print(f"'{answer}' is wrong answer ;). Correct answer was 'no'.'")
+            print(f"Let's try again, {name}!")
+            break
+        if count == 3:
+            print(f'Congratulations, {name}!')
