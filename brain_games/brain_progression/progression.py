@@ -1,4 +1,5 @@
 import prompt
+
 from brain_games.brain_calc.hello import hello_progression
 from brain_games.brain_progression.data_progression import input_data
 

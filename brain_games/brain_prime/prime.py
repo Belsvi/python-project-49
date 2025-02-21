@@ -1,7 +1,8 @@
 import prompt
+
 from brain_games.brain_calc.hello import hello_prime
-from brain_games.brain_prime.data import input_data
 from brain_games.brain_prime.check import is_check
+from brain_games.brain_prime.data import input_data
 
 
 def is_prime():
@@ -12,9 +13,11 @@ def is_prime():
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
         Flag = is_check(num)
-        if (answer == 'yes' and Flag is True) or (answer == 'no' and Flag is False):
+        if answer == 'yes' and Flag is True:
             print('Correct!')
-            count += 1
+        if answer == 'no' and Flag is False:
+            print('Correct!')
+        count += 1
         if answer == 'yes' and Flag is False:
             print(f"'{answer}' is wrong answer ;(."
                   f" Correct answer was 'no'.")

@@ -1,7 +1,8 @@
 import prompt
+
 from brain_games.brain_calc.hello import hello_gcd
-from brain_games.brain_gcd.data_gcd import input_data
 from brain_games.brain_gcd.check import is_check
+from brain_games.brain_gcd.data_gcd import input_data
 
 
 def is_gcd():

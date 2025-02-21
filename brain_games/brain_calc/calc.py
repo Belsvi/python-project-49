@@ -1,6 +1,7 @@
 import prompt
-from brain_games.brain_calc.hello import hello_calc
+
 from brain_games.brain_calc.data import input_data
+from brain_games.brain_calc.hello import hello_calc
 
 
 def is_calc():

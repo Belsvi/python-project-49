@@ -1,6 +1,8 @@
 from random import randint
-from brain_games.game_even.hello import say_hello
+
 import prompt
+
+from brain_games.game_even.hello import say_hello
 
 
 def even_game():
@@ -11,7 +13,10 @@ def even_game():
         num = randint(0, 100)
         print(f'Question: {num}')
         answer = prompt.string('You answer: ')
-        if (num % 2 == 0 and answer == 'yes') or (num % 2 != 0 and answer == 'no'):
+        if num % 2 == 0 and answer == 'yes':
+            print('Correct!')
+            counter += 1
+        if num % 2 != 0 and answer == 'no':
             print('Correct!')
             counter += 1
             if counter == 3:
