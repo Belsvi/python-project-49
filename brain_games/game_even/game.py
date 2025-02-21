@@ -22,10 +22,10 @@ def even_game():
         if counter == 3:
             print(f'Congratulations, {name}!')
         if num % 2 == 0 and (answer == 'no' or answer != 'yes'):
-                print(f"'{answer}' is wrong answer ;(."
-                      f"Correct answer was 'yes'.")
-                print(f"Let's try again, {name}!")
-                break
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was 'yes'.")
+            print(f"Let's try again, {name}!")
+            break
         if num % 2 != 0 and (answer == 'yes' or answer != 'no'):
             print(f"'{answer}' is wrong answer ;(."
                   f" Correct answer was 'no'.")
