@@ -24,4 +24,3 @@ def even_game():
                 print(f"'{answer}' is wrong answer ;). Correct answer was 'no'")
                 print(f"Let's try again, {name}!")
             break
-

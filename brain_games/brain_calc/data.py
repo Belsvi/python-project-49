@@ -14,4 +14,3 @@ def input_data():
     elif operator == '*':
         num = num_1 * num_2
     return num_1, num_2, operator, num
-

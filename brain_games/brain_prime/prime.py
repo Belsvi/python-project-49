@@ -4,7 +4,6 @@ from brain_games.brain_prime.data import input_data
 from brain_games.brain_prime.check import is_check
 
 
-
 def is_prime():
     name = hello_prime()
     count = 0
