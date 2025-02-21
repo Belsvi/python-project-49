@@ -19,8 +19,8 @@ def even_game():
         if num % 2 != 0 and answer == 'no':
             print('Correct!')
             counter += 1
-            if counter == 3:
-                print(f'Congratulations, {name}!')
+        if counter == 3:
+            print(f'Congratulations, {name}!')
         if num % 2 == 0 and (answer == 'no' or answer != 'yes'):
                 print(f"'{answer}' is wrong answer ;(."
                       f"Correct answer was 'yes'.")
