@@ -16,7 +16,8 @@ def is_gcd():
             print('Correct!')
             count += 1
         else:
-            print(f"'{answer}' is wrong answer ;). Correct answer was '{answer_check}.'")
+            print(f"'{answer}' is wrong answer ;)."
+                  f" Correct answer was '{answer_check}'.")
             print(f"Let's try again, {name}!")
             break
     if count == 3:
