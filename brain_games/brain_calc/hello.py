@@ -8,6 +8,7 @@ def hello_calc():
     print('What is the result of the expression?')
     return name
 
+
 def hello_gcd():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name ? ')
@@ -15,12 +16,14 @@ def hello_gcd():
     print('Find the greatest common divisor of given numbers.')
     return name
 
+
 def hello_progression():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name ? ')
     print(f'Hello, {name}!')
     print('What number is missing in the progression?')
     return name
+
 
 def hello_prime():
     print('Welcome to the Brain Games!')
