@@ -1,10 +1,4 @@
-from brain_games.game_even.game import even_game
-
-
-def main():
-    print('Welcome to the Brain Games!')
-    even_game()
-
+from brain_games.games.brain_even import main
 
 if __name__ == '__main__':
     main()

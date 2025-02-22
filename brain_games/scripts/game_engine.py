@@ -1,5 +1,8 @@
 from brain_games.scripts.game_utils import (
-    welcome_user, ask_question, compare_answer, ROUND_LIMIT
+    ROUND_LIMIT,
+    ask_question,
+    compare_answer,
+    welcome_user,
 )
 
 
@@ -23,3 +26,4 @@ def run_game(game_logic, game_rule, game_name):
             return
 
     print(f"Congratulations, {name}!")
+
