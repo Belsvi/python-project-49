@@ -22,4 +22,4 @@ def generate_question_and_answer():
 
 def main():
     game_rule = 'Find the greatest common divisor of given numbers.'
-    run_game(generate_question_and_answer, game_rule, "Even Game")
+    run_game(generate_question_and_answer, game_rule, "Gcd Game")
